@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Home() {
     const [backendData, setBackendData] = useState("");
-    const backendUrl = process.env.BACKEND_URL;
+    const backendUrl = process.env.BACKEND_URL || "portfolio-candidate.vercel.app/api/test";
 
     useEffect(() => {
         async function fetchData() {
