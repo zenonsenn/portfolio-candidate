@@ -20,7 +20,7 @@ export default function Home() {
 
     return (
         <>
-            <div className=" align-middle">
+            <div className="content-center">
                 <div className="max-w-sm">
                     <h1>hello website!</h1>
                     <p>test paragraph</p>
