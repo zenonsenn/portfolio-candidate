@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 export default function Home() {
     const [backendData, setBackendData] = useState("");
-    const backendUrl = process.env.BACKEND_URL || "http://localhost:3080/api/test";
+    const backendUrl = process.env.BACKEND_URL;
 
     useEffect(() => {
         async function fetchData() {
