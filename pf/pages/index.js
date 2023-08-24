@@ -7,7 +7,7 @@ export default function Home() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const response = await fetch(backendUrl); // Change to your backend URL
+                const response = await fetch("/api/server"); // Change to your backend URL
                 const data = await response.json();
                 setBackendData(data.message);
             } catch (error) {
