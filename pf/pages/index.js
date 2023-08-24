@@ -19,7 +19,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div>
+        <div className="max-w-sm">
             <h1>hello website!</h1>
             <p>test paragraph</p>
             <p>and a message from our backend: "{backendData}"</p>
