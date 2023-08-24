@@ -25,6 +25,11 @@ app.get("/", (req, res) => {
     res.status(200).json({ message: "hello from the backend" });
 });
 
+module.exports = (req, res) => {
+    console.log("api called");
+    res.status(200).json({ message: "hello from the backend" });
+};
+
 // app.listen(port, () => console.log(`listening on port ${port}`));
 
 // http.createServer((req, res) => {
