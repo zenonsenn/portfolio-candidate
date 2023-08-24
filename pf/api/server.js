@@ -14,16 +14,16 @@ app.use(cors());
 
 app.use(bodyParser.json());
 
-app.get("/api/out", (req, res) => {
-    console.log("api called");
-    res.writeHead(200, { "Content-Type": "text/json" });
-    res.end(JSON.stringify(testData));
-});
+// app.get("/api/out", (req, res) => {
+//     console.log("api called");
+//     res.writeHead(200, { "Content-Type": "text/json" });
+//     res.end(JSON.stringify(testData));
+// });
 
-app.get("/", (req, res) => {
-    console.log("api called");
-    res.status(200).json({ message: "hello from the backend" });
-});
+// app.get("/", (req, res) => {
+//     console.log("api called");
+//     res.status(200).json({ message: "hello from the backend" });
+// });
 
 module.exports = (req, res) => {
     console.log("api called");
