@@ -20,7 +20,7 @@ app.get("/api/out", (req, res) => {
     res.end(JSON.stringify(testData));
 });
 
-app.get("/api/test", (req, res) => {
+app.get("/", (req, res) => {
     console.log("api called");
     res.status(200).json({ message: "hello from the backend" });
 });
