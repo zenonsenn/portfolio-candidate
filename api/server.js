@@ -3,7 +3,7 @@ const cors = require("cors");
 const app = express(),
     bodyParser = require("body-parser");
 
-// port = 3080 || process.env.PORT;
+port = 3080 || process.env.PORT;
 
 const testData = [{ name: "test", id: "11" }];
 
@@ -25,7 +25,7 @@ app.get("/api/test", (req, res) => {
     res.status(200).json({ message: "hello from the backend" });
 });
 
-// app.listen(port, () => console.log(`listening on port ${port}`));
+app.listen(port, () => console.log(`listening on port ${port}`));
 
 // http.createServer((req, res) => {
 //     console.log("api called");
